@@ -21,11 +21,17 @@ def main():
     results = compare_strategies(strategies)
     print("\n=== RÉSUMÉ DU BACKTEST ===")
     print(results.round(4))
-
+    try:
+        import dataframe_image as dfi
+        dfi.export(results.round(4), "results/metrics_table.png")
+    except:
+        # fallback : export en CSV
+        results.round(4).to_csv("results/metrics_table.csv")
     plot_strategies(
         strategies,
         title="Buy & Hold vs Momentum (20j / 63j / 126j) – S&P 500"
     )
+
 
 if __name__ == "__main__":
     main()

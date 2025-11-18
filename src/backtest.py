@@ -61,4 +61,6 @@ def plot_strategies(strategies: dict, title: str = "Comparaison des stratégies"
     plt.legend()
     plt.yscale("log")  # échelle logarithmique (option pro)
     plt.tight_layout()
+    plt.savefig("results/strategies_plot.png", dpi=300)
+
     plt.show()

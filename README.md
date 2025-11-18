@@ -87,3 +87,38 @@ Ces métriques permettent de juger non seulement la performance brute, mais auss
 │   ├── metrics.py       # calcul des métriques (CAGR, Sharpe, drawdown...)
 │   └── backtest.py      # logique de backtest et comparaison
 └── main.py              # script principal lançant le backtest et affichant les résultats
+
+## 📊 Résultats
+
+Les stratégies Buy & Hold et Momentum ont été évaluées sur la période 2010–2025 à l’aide des métriques clés : rendement annualisé (CAGR), volatilité, drawdown maximal et ratio de Sharpe. Le tableau ci-dessous résume leurs performances :
+
+| Stratégie         | CAGR   | Volatilité | Max Drawdown | Sharpe |
+|-------------------|--------|------------|---------------|--------|
+| Buy & Hold        | 0.1163 | 0.1723     | -0.3392       | 0.0457 |
+| Momentum (126j)   | 0.0808 | 0.1131     | -0.1838       | 0.0469 |
+
+### 🧠 Interprétation
+
+Malgré un rendement annualisé plus faible que le Buy & Hold — logique dans un marché structurellement haussier comme le S&P 500 — la stratégie Momentum présente deux avantages majeurs en termes de gestion du risque :
+
+**1. Une volatilité nettement plus faible**  
+La stratégie Momentum affiche environ **35% de volatilité en moins**, ce qui se traduit par une trajectoire de portefeuille plus stable et plus prévisible.
+
+**2. Une meilleure résistance aux phases baissières**  
+Le Max Drawdown passe de **–34% pour Buy & Hold** à **–18% pour Momentum**, illustrant une réduction significative de l’exposition aux baisses de marché.
+
+Ainsi, même si la performance brute est inférieure, la **performance ajustée au risque** (Sharpe) est légèrement meilleure pour Momentum.  
+Le Momentum offre donc un compromis intéressant : *moins de performance brute mais un profil risque/rendement plus maîtrisé*.
+
+### 📈 Visualisation
+
+Le graphique ci-dessous compare l’évolution des portefeuilles Buy & Hold et Momentum (20j, 63j et 126j) sur une échelle logarithmique, permettant de visualiser la croissance composée et la différence de volatilité entre les stratégies.
+## 📈 Visualisation des stratégies
+
+![Comparaison des stratégies](results/strategies_plot.png)
+
+---
+
+## 📊 Tableau des métriques
+
+![Tableau des métriques](results/metrics_table.png)
