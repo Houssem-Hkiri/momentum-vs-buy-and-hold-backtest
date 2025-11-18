@@ -110,9 +110,6 @@ Le Max Drawdown passe de **–34% pour Buy & Hold** à **–18% pour Momentum**,
 Ainsi, même si la performance brute est inférieure, la **performance ajustée au risque** (Sharpe) est légèrement meilleure pour Momentum.  
 Le Momentum offre donc un compromis intéressant : *moins de performance brute mais un profil risque/rendement plus maîtrisé*.
 
-### 📈 Visualisation
-
-Le graphique ci-dessous compare l’évolution des portefeuilles Buy & Hold et Momentum (20j, 63j et 126j) sur une échelle logarithmique, permettant de visualiser la croissance composée et la différence de volatilité entre les stratégies.
 ## 📈 Visualisation des stratégies
 
 ![Comparaison des stratégies](results/strategies_plot.png)
