@@ -87,7 +87,7 @@ Ces métriques permettent de juger non seulement la performance brute, mais auss
 │   ├── metrics.py       # calcul des métriques (CAGR, Sharpe, drawdown...)
 │   └── backtest.py      # logique de backtest et comparaison
 └── main.py              # script principal lançant le backtest et affichant les résultats
-
+```
 ## 📊 Résultats
 
 Les stratégies Buy & Hold et Momentum ont été évaluées sur la période 2010–2025 à l’aide des métriques clés : rendement annualisé (CAGR), volatilité, drawdown maximal et ratio de Sharpe. Le tableau ci-dessous résume leurs performances :
